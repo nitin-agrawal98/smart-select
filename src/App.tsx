@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const url = "https://smart-select-dev.s3.ap-south-1.amazonaws.com/web/JEE/JEE.xlsx";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <table>
+          <tr>
+            <th>
+              Exam
+            </th>
+            <th>
+              Excel File
+            </th>
+          </tr>
+          <tr>
+            <td>JEE</td>
+            <td><a href={url}>Download File</a></td>
+          </tr>
+      </table>
     </div>
   );
 }
